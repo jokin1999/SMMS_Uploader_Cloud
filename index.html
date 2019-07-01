@@ -1,58 +1,139 @@
 <!DOCTYPE html>
-<html lang="zh-CN" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>SMMS Uploader Cloud</title>
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <style media="screen">
-      .maintaining {
-        color: green;
-      }
-      .offline {
-        color: grey;
-      }
-      table.table-main {
-        margin: auto;
-        border: 1px solid #ccc;
-        border-collapse: collapse;
-      }
-      table.table-main > tbody > tr > th, table.table-main > tbody > tr > td {
-        padding: 0 10px;
-        border: 1px solid #ccc;
-      }
-    </style>
-  </head>
-  <body style="text-align:center">
+<html lang="zh-CN">
 
-    <h1>SMMS Uploader Cloud</h1>
+<head>
 
-    <div style="text-align:center;">
-      <table class="table-main">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="SMMS Uploader Cloud">
+  <meta name="author" content="Jokin">
+
+  <title>SMMS Uploader Cloud</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.lug.ustc.edu.cn/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/landing-page.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <!-- <nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="btn btn-primary" href="#">Sign In</a>
+    </div>
+  </nav> -->
+
+  <!-- Masthead -->
+  <header class="masthead text-white text-center bg-primary">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">SMMS Uploader Cloud</h1>
+          <h3 class="mb-5">SMMS Uploader 云服务中心</h3>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Update Time -->
+  <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5">部署状态 / Deploy Status</h2>
+      <p>
+        <img src="https://api.netlify.com/api/v1/badges/07033f6b-a0e4-49dc-8958-351000bbe307/deploy-status" alt="status">
+      </p>
+      <table class="table table-hover table-striped">
+        <thead>
+          <tr>
+            <th scope="col">名称</th>
+            <th scope="col">软件版本</th>
+            <th scope="col">API版本</th>
+            <th scope="col">状态</th>
+          </tr>
+        </thead>
         <tbody>
           <tr>
-            <th>名称</th>
-            <th>软件版本</th>
-            <th>API版本</th>
-            <th>状态</th>
-          </tr>
-
-          <tr>
-            <td>Domains Relay</td>
+            <th scope="row">中继</th>
             <td>v1.0.6 - ~</td>
             <td>v1</td>
-            <td class="maintaining">持续维护</td>
+            <td class="text-success">持续维护</td>
           </tr>
-
           <tr>
-            <td>Domains Relay</td>
+            <th scope="row">分享系统</th>
             <td>~ - ~</td>
-            <td>v2</td>
-            <td class="offline">暂未上线</td>
+            <td>v1</td>
+            <td class="text-muted">暂未上线</td>
           </tr>
-
         </tbody>
       </table>
     </div>
+  </section>
 
-  </body>
+  <!-- Call to Action -->
+  <section class="call-to-action text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h2 class="mb-4">获取支持 / Support</h2>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <a class="btn btn-outline-light" href="https://github.com/jokin1999/SMMS_Uploader/issues/new" target="_blank" role="button">提交ISSUE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notices -->
+  <section class="testimonials text-center bg-light border-bottom">
+    <div class="container">
+      <h2 class="mb-5">公告 / Notices</h2>
+      <table class="table table-hover table-striped">
+        <thead>
+          <tr>
+            <th scope="col">类型</th>
+            <th scope="col">日期</th>
+            <th scope="col">链接</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">部署</th>
+            <td>2019.07.01</td>
+            <td><a href="./notices/deploy/1_upgrade.html" target="_blank">查看</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer pb-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a class="text-dark" href="https://github.com/jokin1999/SMMS_Uploader" target="_blank">GitHub</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">SMMS Uploader 使用 MIT 开源协议</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
